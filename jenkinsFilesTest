@@ -12,8 +12,8 @@ pipeline {
                 // Run Maven on a Unix agent.
                 sh """
                 ls 
-                mkdir fee 
-                cd fee 
+                mkdir fee54 
+                cd fee54
                 touch f1 f2 f3
                 
                 """
