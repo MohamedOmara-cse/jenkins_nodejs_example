@@ -1,0 +1,25 @@
+pipeline {
+    agent any
+
+   
+
+    stages {
+        stage('Build') {
+            steps {
+                // Get some code from a GitHub repository
+                git 'https://github.com/MohamedOmara-cse/jenkins_nodejs_example'
+
+                // Run Maven on a Unix agent.
+                sh """
+                ls 
+                mkdir fee 
+                cd fee 
+                touch f1 f2 f3
+                
+                """
+
+          
+            }
+        }
+    }
+}
